@@ -10,6 +10,7 @@ import math
 import jinja2
 import os.path
 import io
+from google.appengine.ext.webapp.util import run_wsgi_app
 
 ## Sessions enabled ##
 wsgi_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
@@ -27,9 +28,6 @@ conf = {
 ## Setting up jinja2's web template stuff ##
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
 
-## Setting up the webserver on OpenShift ##
-cherrypy.config.update({'environment': 'embedded'})
-
 if cherrypy.__version__.startswith('3.') and cherrypy.engine.state == 0:
     cherrypy.engine.start(blocking=False)
     atexit.register(cherrypy.engine.stop)
@@ -40,8 +38,8 @@ class Pleasework:
     def index(self):
         tmpl = env.get_template('index.html')
         return tmpl.render()
-    
-    ## Processor ##    
+
+    ## Processor ##
     @cherrypy.expose
     def processdata(self, myFile):
         ## Importing and organizing data into (x,y,z) tuple based on fault name ##
@@ -52,30 +50,30 @@ class Pleasework:
 #                    if row[3] not in faults:
 #                        faults[row[3]] = []
 #                    faults[row[3]].append((int(row[0]),int(row[1]),int(row[2])))
-    
-        faults = {} 
+
+        faults = {}
         reader = csv.reader(io.TextIOWrapper(myFile.file))
         for row in reader:
             if row[3] not in faults:
                 faults[row[3]] = []
-            faults[row[3]].append((int(row[0]),int(row[1]),int(row[2])))       
-        
+            faults[row[3]].append((int(row[0]),int(row[1]),int(row[2])))
+
 
         ## Saves faults XYZ data into a session variable ##
         cherrypy.session['faults'] = faults
-             
+
         ## Creates a list of Z values ##
         z=[[n[2] for n in faults[i]] for i in faults.keys()]
 
         ## Pulls (X,Y,1) points for every fault... list->list->int ##
         xyone = [[(n[0], n[1], 1) for n in faults[i]] for i in faults.keys()]
-        
+
         ## Returns the coefficients of the best fit plane ##
         ## (At * A)^-1 * At * z
         plane = []
         for i in range(0, len(xyone)):
-            plane.append((np.matrix(xyone[i],dtype=np.int64).T*np.matrix(xyone[i],dtype=np.int64))**-1*np.matrix(xyone[i],dtype=np.int64).T*np.matrix(z[i],dtype=np.int64).T)    
-       
+            plane.append((np.matrix(xyone[i],dtype=np.int64).T*np.matrix(xyone[i],dtype=np.int64))**-1*np.matrix(xyone[i],dtype=np.int64).T*np.matrix(z[i],dtype=np.int64).T)
+
         ## Gives a list of fault strikes, unadjusted for right hand rule ##
         tempunadjustedstrike = []
         unadjustedstrike = []
@@ -136,7 +134,7 @@ class Pleasework:
         dipsteptwo = []
         for i in range(0, len(plane)):
             dipsteptwo.append(sum([dipstepone[i][0],dipstepone[i][1],[0]],[]))
-        
+
         u = []
         v = []
         for i in range(0, len(dipsteptwo)):
@@ -160,31 +158,18 @@ class Pleasework:
         faultskeys = list(faults.keys())
         answers = []
         for i in range(0, len(plane)):
-            answers.append({'name' : faultskeys[i], 'strike' : str(round(faultstrike[i],1)), 'dip' : str(round(dipangle[i],1)), 'direction' : str(dipdirection[i]), 'a' : float(plane[i][0]), 'b' : float(plane[i][1]), 
+            answers.append({'name' : faultskeys[i], 'strike' : str(round(faultstrike[i],1)), 'dip' : str(round(dipangle[i],1)), 'direction' : str(dipdirection[i]), 'a' : float(plane[i][0]), 'b' : float(plane[i][1]),
                             'c' : float(plane[i][2])})
         cherrypy.session['processeddata'] = answers
-        
+
         raise cherrypy.HTTPRedirect("/displayprocesseddata")
-    
-    ## Displays table of data ##    
+
+    ## Displays table of data ##
     @cherrypy.expose
     def displayprocesseddata(self):
         tmpl = env.get_template('exportdata.html')
-        return tmpl.render(answers = cherrypy.session['processeddata'])  
-         
-
-## Turns on sessions so you can carry variables across methods ##
-#if __name__ == '__main__':
-#     conf = {
-#         '/': {
-#             'tools.sessions.on': True
-#         }
-#     }
-#     application = cherrypy.Application(Pleasework(), '/', conf)
-
-
-
-
+        return tmpl.render(answers = cherrypy.session['processeddata'])
 
 
 application = cherrypy.Application(Pleasework(), '/', conf)
+run_wsgi_app(application)

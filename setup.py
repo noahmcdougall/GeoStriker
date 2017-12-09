@@ -1,10 +1,10 @@
 from setuptools import setup
 
-setup(name='XYZ Strike Dip Calculator',
+setup(name='GeoStriker',
       version='1.0',
-      description='OpenShift App',
+      description='Google Cloud',
       author='Noah McDougall',
-      author_email='noahmcdougall@gmail.com',
-      url='xyzstrikedipcalculator-noahmcdougall.rhcloud.com/',
+      author_email='noah.mcdougall@gmail.com',
+      url='geostriker.appspot.com',
 #      install_requires=['Django>=1.3'],
      )

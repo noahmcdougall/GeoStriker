@@ -1,0 +1,15 @@
+version: 1
+runtime: python3
+api_version: 1
+threadsafe: true
+# [START handlers]
+handlers:
+- url: /.*
+  script: application.py
+# [END handlers]
+
+# [START libraries]
+libraries:
+- name: jinja2
+  version: latest
+# [END libraries]
