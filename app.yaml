@@ -5,7 +5,7 @@ threadsafe: false
 # [START handlers]
 handlers:
 - url: /.*
-  script: application.py
+  script: /wsgi/application.py
 # [END handlers]
 
 # [START libraries]
