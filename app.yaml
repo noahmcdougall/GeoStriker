@@ -9,11 +9,5 @@ handlers:
 # [END handlers]
 
 # [START libraries]
-libraries:
-- name: jinja2
-  version: 2.6
-- name: numpy
-  version: 1.6.1
-- name: cherrypy
-  version: 3.6.0
+#libraries:
 # [END libraries]
