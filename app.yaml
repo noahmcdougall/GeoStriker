@@ -11,7 +11,9 @@ handlers:
 # [START libraries]
 libraries:
 - name: jinja2
-  version: 2.6
+  version: 2.7.3
 - name: numpy
-  version: 1.6.1
+  version: 1.9.1
+- name: cherrypy
+  version: 3.6.0
 # [END libraries]
