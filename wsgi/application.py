@@ -10,7 +10,6 @@ import math
 import jinja2
 import os.path
 import io
-from google.appengine.ext.webapp.util import run_wsgi_app
 
 ## Sessions enabled ##
 wsgi_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
@@ -172,4 +171,3 @@ class Pleasework:
 
 
 application = cherrypy.Application(Pleasework(), '/', conf)
-run_wsgi_app(application)
