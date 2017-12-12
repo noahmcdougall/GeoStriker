@@ -25,7 +25,7 @@ conf = {
 
 
 ## Setting up jinja2's web template stuff ##
-env = jinja2.Environment(loader=jinja2.FileSystemLoader('wsgi/templates'))
+env = jinja2.Environment(loader=jinja2.FileSystemLoader('/templates'))
 
 if cherrypy.__version__.startswith('3.') and cherrypy.engine.state == 0:
     cherrypy.engine.start(blocking=False)
