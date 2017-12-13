@@ -10,10 +10,6 @@ import math
 import jinja2
 import os.path
 import io
-import cgitb
-
-## I believe this feeds errors in html ##
-cgitb.enable()
 
 ## Sessions enabled ##
 wsgi_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
