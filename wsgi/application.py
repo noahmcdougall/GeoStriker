@@ -32,7 +32,7 @@ if cherrypy.__version__.startswith('3.') and cherrypy.engine.state == 0:
     atexit.register(cherrypy.engine.stop)
 
 
-class Pleasework:
+class application:
     @cherrypy.expose
     def index(self):
         tmpl = env.get_template('index.html')
@@ -170,4 +170,4 @@ class Pleasework:
         return tmpl.render(answers = cherrypy.session['processeddata'])
 
 
-cherrypy.Application(Pleasework(), '/', conf)
+cherrypy.Application(application(), '/', conf)
