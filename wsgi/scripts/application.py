@@ -19,13 +19,13 @@ conf = {
          },
          '/static': {
             'tools.staticdir.on': True,
-            'tools.staticdir.dir': os.path.join(wsgi_dir, 'static'),
+            'tools.staticdir.dir': os.path.join(wsgi_dir, 'assets'),
         }
     }
 
 
 ## Setting up jinja2's web template stuff ##
-env = jinja2.Environment(loader=jinja2.FileSystemLoader('/templates'))
+env = jinja2.Environment(loader=jinja2.FileSystemLoader('/'))
 
 if cherrypy.__version__.startswith('3.') and cherrypy.engine.state == 0:
     cherrypy.engine.start(blocking=False)
