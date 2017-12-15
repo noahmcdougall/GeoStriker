@@ -170,4 +170,4 @@ class Pleasework:
         return tmpl.render(answers = cherrypy.session['processeddata'])
 
 
-application = cherrypy.Application(Pleasework(), '/', conf)
+cherrypy.Application(Pleasework(), '/', conf)
