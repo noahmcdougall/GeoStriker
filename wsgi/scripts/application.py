@@ -161,7 +161,7 @@ class application:
                             'c' : float(plane[i][2])})
         cherrypy.session['processeddata'] = answers
 
-        raise cherrypy.HTTPRedirect("/displayprocesseddata")
+        raise cherrypy.HTTPRedirect("/exportdata.html")
 
     ## Displays table of data ##
     @cherrypy.expose
