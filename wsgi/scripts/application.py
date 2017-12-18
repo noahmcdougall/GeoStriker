@@ -12,20 +12,20 @@ import os.path
 import io
 
 ## Sessions enabled ##
-wsgi_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
+wsgi_dir = '/home/noahmcdougall/GeoStriker/wsgi/static'
 conf = {
          '/': {
              'tools.sessions.on': True
          },
          '/static': {
             'tools.staticdir.on': True,
-            'tools.staticdir.dir': os.path.join(wsgi_dir, '/home/noahmcdougall/GeoStriker/wsgi/static/assets'),
+            'tools.staticdir.dir': os.path.join(wsgi_dir, 'assets'),
         }
     }
 
 
 ## Setting up jinja2's web template stuff ##
-env = jinja2.Environment(loader=jinja2.FileSystemLoader('/home/noahmcdougall/GeoStriker/wsgi/static'))
+env = jinja2.Environment(loader=jinja2.FileSystemLoader('wsgi_dir'))
 
 if cherrypy.__version__.startswith('3.') and cherrypy.engine.state == 0:
     cherrypy.engine.start(blocking=False)
