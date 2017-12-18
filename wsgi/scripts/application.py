@@ -42,11 +42,12 @@ class calculate:
     @cherrypy.expose
     def processdata(self, myFile):
         faults = {}
-        reader = csv.reader(io.TextIOWrapper(myFile.file))
-        for row in reader:
-            if row[3] not in faults:
-                faults[row[3]] = []
-            faults[row[3]].append((int(row[0]),int(row[1]),int(row[2])))
+        with open(myFile.file, 'rt') as csvfile:
+            reader = csv.reader(io.TextIOWrapper(csvfile))
+            for row in reader:
+                if row[3] not in faults:
+                    faults[row[3]] = []
+                faults[row[3]].append((int(row[0]),int(row[1]),int(row[2])))
 
 
         ## Saves faults XYZ data into a session variable ##
