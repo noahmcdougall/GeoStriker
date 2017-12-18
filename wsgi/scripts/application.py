@@ -32,7 +32,7 @@ if cherrypy.__version__.startswith('3.') and cherrypy.engine.state == 0:
     atexit.register(cherrypy.engine.stop)
 
 
-class application:
+class calculate:
     @cherrypy.expose
     def index(self):
         tmpl = env.get_template('index.html')
@@ -161,4 +161,4 @@ class application:
         return tmpl.render(answers = cherrypy.session['processeddata'])
 
 
-    cherrypy.Application(application(), '/', conf)
+application = cherrypy.Application(calculate(), '/', conf)
