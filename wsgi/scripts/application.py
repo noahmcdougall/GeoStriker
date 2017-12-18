@@ -42,7 +42,7 @@ class calculate:
     @cherrypy.expose
     def processdata(self, myFile):
         faults = {}
-        reader = csv.reader(io.TextIOWrapper(myFile.file))
+        reader = csv.reader(myFile.file)
         for row in reader:
             if row[3] not in faults:
                 faults[row[3]] = []
