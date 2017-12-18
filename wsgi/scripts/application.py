@@ -19,7 +19,7 @@ conf = {
          },
          '/static': {
             'tools.staticdir.on': True,
-            'tools.staticdir.dir': os.path.join(wsgi_dir, 'assets'),
+            'tools.staticdir.dir': os.path.join(wsgi_dir, '/home/noahmcdougall/GeoStriker/wsgi/static/assets'),
         }
     }
 
