@@ -41,15 +41,6 @@ class application:
     ## Processor ##
     @cherrypy.expose
     def processdata(self, myFile):
-        ## Importing and organizing data into (x,y,z) tuple based on fault name ##
-#        with open(cherrypy.session['uploadeddata'], 'rt') as datalist:
-#                reader = csv.reader(datalist, delimiter=",")
-#                faults = dict()
-#                for row in reader:
-#                    if row[3] not in faults:
-#                        faults[row[3]] = []
-#                    faults[row[3]].append((int(row[0]),int(row[1]),int(row[2])))
-
         faults = {}
         reader = csv.reader(io.TextIOWrapper(myFile.file))
         for row in reader:
@@ -170,4 +161,4 @@ class application:
         return tmpl.render(answers = cherrypy.session['processeddata'])
 
 
-cherrypy.Application(application(), '/', conf)
+    cherrypy.Application(application(), '/', conf)
