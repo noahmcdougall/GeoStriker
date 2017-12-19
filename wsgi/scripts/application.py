@@ -62,7 +62,7 @@ class calculate:
         ## (At * A)^-1 * At * z
         plane = []
         for i in range(0, len(xyone)):
-            plane.append((np.matrix(xyone[i],dtype=np.int64).T*np.matrix(xyone[i],dtype=np.int64))**-1*np.matrix(xyone[i],dtype=np.int64).T*np.matrix(z[i],dtype=np.int64).T)
+            plane.append((np.matrix(xyone[i],dtype=np.int64).T*np.matrix(xyone[i],dtype=np.int64))**-1 * (np.matrix(xyone[i],dtype=np.int64).T*np.matrix(z[i],dtype=np.int64).T))
 
         ## Gives a list of fault strikes, unadjusted for right hand rule ##
         tempunadjustedstrike = []
