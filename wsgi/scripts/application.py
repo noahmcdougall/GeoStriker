@@ -142,7 +142,7 @@ class calculate:
         ## Calculates dip angle using acos(u dot v / ||u||*||v||) ##
         dipangle = []
         for i in range(0, len(plane)):
-            dipangle.append(np.degrees(math.acos((u[i][0]*v[i][0]+u[i][1]*v[i][1]+u[i][2]*v[i][2])/(Us[i]*Vs[i]))))
+            dipangle.append(np.degrees(math.acos((u[i][0] * v[i][0] + u[i][1] * v[i][1] + u[i][2] * v[i][2])/(Us[i] * Vs[i]))))
 
         ## Returns fault name, rounded strike, rounded dip angle, and dip direction ##
         faultskeys = list(faults.keys())
