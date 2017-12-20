@@ -137,11 +137,11 @@ class calculate:
 
         Us = []
         for i in range(0, len(plane)):
-            Us.append(((u[i][0]**2) + (u[i][1]**2))**(1/2))
+            Us.append(((u[i][0]**2) + (u[i][1]**2))**(0.5))
 
         Vs = []
         for i in range(0, len(plane)):
-            Vs.append(((v[i][0]**2) + (v[i][1]**2) + (v[i][2]**2))**(1/2))
+            Vs.append(((v[i][0]**2) + (v[i][1]**2) + (v[i][2]**2))**(0.5))
 
         ## Calculates dip angle using acos(u dot v / ||u||*||v||) ##
         dipangle = []
