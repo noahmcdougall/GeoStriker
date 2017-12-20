@@ -68,8 +68,12 @@ class calculate:
         tempunadjustedstrike = []
         unadjustedstrike = []
         for i in range(0, len(plane)):
-            tempunadjustedstrike.append(90 - np.degrees(np.arctan(plane[i][0]/-plane[i][1])))
-            unadjustedstrike.append(tempunadjustedstrike[i].tolist())
+            if plane[i][1] == 0:
+                tempunadjustedstrike.append(np.matrix(0))
+                unadjustedstrike.append(tempunadjustedstrike[i].tolist())
+            else:
+                tempunadjustedstrike.append(90 - np.degrees(np.arctan(plane[i][0]/-plane[i][1])))
+                unadjustedstrike.append(tempunadjustedstrike[i].tolist())
         unadjustedstrike = sum(unadjustedstrike, [])
         unadjustedstrike = sum(unadjustedstrike, [])
 
