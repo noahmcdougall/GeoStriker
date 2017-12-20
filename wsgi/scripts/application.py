@@ -153,7 +153,7 @@ class calculate:
         answers = []
         for i in range(0, len(plane)):
             answers.append({'name' : faultskeys[i], 'strike' : str(round(faultstrike[i],1)), 'dip' : str(round(dipangle[i],1)), 'direction' : str(dipdirection[i]), 'a' : float(plane[i][0]), 'b' : float(plane[i][1]),
-                            'c' : float(plane[i][2]), 'Us' : float(Us[i]), 'Vs' : float(Vs[i]), 'u1' : float(u[i][0]), 'u2' : float(u[i][1]), 'u3' : float(u[i][2]), 'v1' : float(v[i][0])})
+            'c' : float(plane[i][2]), 'Us' : float(Us[i]), 'Vs' : float(Vs[i]), 'u1' : float(u[i][0]), 'u2' : float(u[i][1]), 'u3' : float(u[i][2]), 'v1' : float(v[i][0]), 'v2' : float(v[i][1]), 'v3' : float(v[i][2])})
         cherrypy.session['processeddata'] = answers
 
         raise cherrypy.HTTPRedirect("/displayprocesseddata")
