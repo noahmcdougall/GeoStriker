@@ -1,8 +1,8 @@
 <body>
 <table border=1>
-<tr><th>Name</th><th>Strike</th><th>Dip</th><th>Direction</th><th>a</th><th>b</th><th>c</th><th>Us</th><th>Vs</th><th>u1</th><th>u2</th><th>u3</th><th>v1</th><th>Action</th></tr>
+<tr><th>Name</th><th>Strike</th><th>Dip</th><th>Direction</th><th>a</th><th>b</th><th>c</th><th>Action</th></tr>
 {% for item in answers %}
-<tr><td>{{ item.name }}</td><td>{{ item.strike }}</td><td>{{ item.dip }}</td><td>{{ item.direction }}</td><td>{{ item.a }}</td><td>{{ item.b }}</td><td>{{ item.c }}</td><td>{{ item.Us }}</td><td>{{ item.Vs }}</td><td>{{ item.u1 }}</td><td>{{ item.u2 }}</td><td>{{ item.u3 }}</td><td>{{ item.v1 }}</td><td><input type="button"></td></tr>
+<tr><td>{{ item.name }}</td><td>{{ item.strike }}</td><td>{{ item.dip }}</td><td>{{ item.direction }}</td><td>{{ item.a }}</td><td>{{ item.b }}</td><td>{{ item.c }}</td><td><input type="button"></td></tr>
 {% endfor %}
 </table>
 <br />
