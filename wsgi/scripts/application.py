@@ -133,7 +133,7 @@ class calculate:
         v = []
         for i in range(0, len(dipsteptwo)):
             u.append([dipsteptwo[i][0]*-1, dipsteptwo[i][1]*-1,0])
-            v.append([dipsteptwo[i][0]*-1, dipsteptwo[i][1]*-1,(dipsteptwo[i][0]**2)*-1 - (dipsteptwo[i][1]**2)])
+            v.append([dipsteptwo[i][0]*-1, dipsteptwo[i][1]*-1,(dipsteptwo[i][1]**2)*-1 - (dipsteptwo[i][0]**2)])
 
         Us = []
         for i in range(0, len(plane)):
