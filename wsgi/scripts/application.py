@@ -46,7 +46,7 @@ class calculate:
         for row in reader:
             if row[3] not in faults:
                 faults[row[3]] = []
-            faults[row[3]].append((int(row[0]),int(row[1]),int(row[2])))
+            faults[row[3]].append((int(float(row[0])),int(float(row[1])),int(float(row[2]))))
 
 
         ## Saves faults XYZ data into a session variable ##
