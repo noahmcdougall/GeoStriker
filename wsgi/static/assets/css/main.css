@@ -541,8 +541,7 @@ section.indexpage {
   -webkit-box-pack: end;
   -webkit-justify-content: center;
       -ms-flex-pack: end;
-          justify-content: center;
-}
+          justify-content: center; }
 
 section.indexpage hr {
   border: 0;
@@ -613,7 +612,7 @@ section.indexpage .XYZImage {
   background-size: contain; }
 
 section.indexpage .col-1 {
-  height: 450px;
+  height: 350px;
   width: 40%;
   min-width: 320px;
   margin-top: 30px;
