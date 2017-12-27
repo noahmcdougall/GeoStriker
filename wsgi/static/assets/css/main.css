@@ -671,7 +671,7 @@ section.indexpage .body {
           justify-content: space-around; }
 
 .page-wrap {
-  min-height: 100%;
+  min-height: 450px;
   margin-bottom: 3vw; }
 
 .page-wrap:after {
