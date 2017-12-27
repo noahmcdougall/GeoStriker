@@ -545,6 +545,10 @@ section.indexpage {
 }
 
 section.indexpage hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #ffffff;
   height: 1px;
   background-color: #ffffff; }
 }
