@@ -544,9 +544,11 @@ section.indexpage {
 }
 
 section.indexpage h2 {
+  text-align: center
   font-size: 35px; }
 
 section.indexpage p {
+  text-align: center
   font-size: 35px; }
 
 section.indexpage .col-1 {
