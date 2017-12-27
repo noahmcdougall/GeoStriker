@@ -580,7 +580,7 @@ section.indexpage .col-1 {
           justify-content: center; }
 
 section.indexpage h1 {
-  align-self: center
+  align-self: center;
   font-size: 5vw;
   color: #ffffff;
   weight: 400;
