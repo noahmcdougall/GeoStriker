@@ -548,9 +548,9 @@ section.indexpage hr {
   border: 0;
   clear:both;
   display:block;
-  width: 96%;
-  background-color:#FFFF00;
-  height: 1px; }
+  width: 40%;
+  background-color:#ffffff;
+  height: 2px; }
 
 section.indexpage .col-1 p {
   text-align: center;
