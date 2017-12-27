@@ -59,7 +59,8 @@ section {
  */
 h1 {
   font-size: 2em;
-  margin-bottom: 0.34em; }
+  margin-top: 0px;
+  margin-bottom: 0.14em; }
 
 /* Grouping content
    ========================================================================== */
