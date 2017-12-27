@@ -570,6 +570,25 @@ section.indexpage .header {
       -ms-flex-pack: center;
           justify-content: center; }
 
+section.indexpage .menu {
+  align-items: center;
+  height: 5vw;
+  width: 100%;
+  background-color: #3f3f42;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 section.indexpage .XYZImage {
   height: 20vw;
   background-repeat: no-repeat;
