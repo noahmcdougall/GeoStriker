@@ -670,7 +670,7 @@ section.indexpage .body {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-footer {
+section.indexpage .footer {
   align-items: center;
   height: 3vw;
   width: 100%;
