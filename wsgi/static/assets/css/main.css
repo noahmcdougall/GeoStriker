@@ -671,9 +671,6 @@ section.indexpage .body {
           justify-content: space-around; }
 
 section.indexpage .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   align-items: center;
   height: 3vw;
   width: 100%;
