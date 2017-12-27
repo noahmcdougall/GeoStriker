@@ -553,6 +553,7 @@ section.indexpage .col-1 p {
 
 section.indexpage .header {
   height: 30vw;
+  width: 100%;
   background-repeat: no-repeat;
   background-image: url(/static/assets/img/background.jpg);
   background-position: center;
