@@ -544,9 +544,9 @@ section.indexpage {
 }
 
 section.indexpage h2 {
-  margin-left: 160px;
-  margin-right: auto;
-  max-width: 300px;
+  font-size: 35px; }
+
+section.indexpage p {
   font-size: 35px; }
 
 section.indexpage .col-1 {
