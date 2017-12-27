@@ -599,6 +599,7 @@ section.indexpage h1 {
   weight: 400;
   text-align: center;
   margin-top: 0;
+  text-shadow: 2px 2px #ff0000;
   height: 4vw; }
 
 section.indexpage h2 {
@@ -607,4 +608,5 @@ section.indexpage h2 {
   weight: 400;
   text-align: center;
   margin-top: 0;
+  text-shadow: 2px 2px #ff0000;
   height: 4vw; }
