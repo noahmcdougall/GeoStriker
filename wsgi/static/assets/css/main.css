@@ -534,9 +534,9 @@ section.indexpage {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: rows;
-      -ms-flex-direction: rows;
-          flex-direction: rows;
+  -webkit-flex-direction: columns;
+      -ms-flex-direction: columns;
+          flex-direction: columns;
   -webkit-box-pack: end;
   -webkit-justify-content: center;
       -ms-flex-pack: end;
