@@ -660,7 +660,7 @@ section.indexpage .body {
 
 section.indexpage .footer {
   align-items: center;
-  height: 5vw;
+  height: 3vw;
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
@@ -677,6 +677,6 @@ section.indexpage .footer {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-section.indexpage .footer p {
-  font-size: 2.5vw;
+section.indexpage .footer a {
+  font-size: 1.25vw;
   color: #ffffff; }
