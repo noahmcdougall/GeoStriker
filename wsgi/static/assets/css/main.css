@@ -549,6 +549,7 @@ section.indexpage .col-1 p {
   font-size: 35px; }
 
 section.indexpage .header {
+  align-items: center;
   height: 30vw;
   width: 100%;
   background-repeat: no-repeat;
@@ -580,7 +581,6 @@ section.indexpage .col-1 {
           justify-content: center; }
 
 section.indexpage h1 {
-  vertical-align: center;
   font-size: 5vw;
   color: #ffffff;
   weight: 400;
@@ -589,7 +589,6 @@ section.indexpage h1 {
   height: 4vw; }
 
 section.indexpage h2 {
-  vertical-align: center;
   font-size: 2.5vw;
   color: #ffffff;
   weight: 400;
