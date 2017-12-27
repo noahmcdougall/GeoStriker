@@ -603,6 +603,8 @@ section.indexpage .XYZImage {
   background-size: contain; }
 
 section.indexpage .col-1 {
+  height: 300px;
+  min-width: 320px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -638,7 +640,6 @@ section.indexpage h2 {
 
 section.indexpage .body {
   align-items: center;
-  height: 50vw;
   width: 100%;
   background-color: #ffffff;
   display: -webkit-box;
