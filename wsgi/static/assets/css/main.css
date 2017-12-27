@@ -674,7 +674,7 @@ section.indexpage .wrapper {
   min-height: 100%;
   margin-bottom: -3vw; }
 
-section.indexpage .footer, .page-wrap:after {
+.footer, .page-wrap:after {
   align-items: center;
   height: 3vw;
   width: 100%;
