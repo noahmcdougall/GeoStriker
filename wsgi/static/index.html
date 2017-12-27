@@ -8,32 +8,34 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	</head>
 <body>
-	<section class="indexpage">
-		<div class="header">
-			<h1>GeoStriker</h1>
-			<hr/>
-			<h2>Strike Dip Calculator from XYZ Points</h2>
+	<div class="wrapper">
+		<section class="indexpage">
+			<div class="header">
+				<h1>GeoStriker</h1>
+				<hr/>
+				<h2>Strike Dip Calculator from XYZ Points</h2>
+				</div>
+			<div class="menu">
+				<p></p>
+				<a href='/'>Home</a>
+				<a href='/static/assets/pdf/Guide.pdf'>Guide</a>
+				<a href='/about.html'>About</a>
+				<p></p>
+				</div>
+			<div class="body">
+				<div class="col-1">
+		      <p>Add a file to be processed.</p>
+		      <form action="processdata" method="post" enctype="multipart/form-data">
+		      	filename: <input type="file" name="myFile" /><br />
+		      	<input type="submit" />
+		      </form>
+				</div>
+				<div class="col-1">
+					<div class="XYZImage"></div>
+				</div>
 			</div>
-		<div class="menu">
-			<p></p>
-			<a href='/'>Home</a>
-			<a href='/static/assets/pdf/Guide.pdf'>Guide</a>
-			<a href='/about.html'>About</a>
-			<p></p>
-			</div>
-		<div class="page-wrap"><div class="body">
-			<div class="col-1">
-	      <p>Add a file to be processed.</p>
-	      <form action="processdata" method="post" enctype="multipart/form-data">
-	      	filename: <input type="file" name="myFile" /><br />
-	      	<input type="submit" />
-	      </form>
-			</div>
-			<div class="col-1">
-				<div class="XYZImage"></div>
-			</div>
-		</div></div>
-		<div class="footer">
-			<a href="mailto:noah.mcdougall@gmail.com">noah.mcdougall@gmail.com</a>
-		</div>
-</section></body></html>
+		</section></div>
+	<div class="footer">
+		<a href="mailto:noah.mcdougall@gmail.com">noah.mcdougall@gmail.com</a>
+	</div>
+</body></html>

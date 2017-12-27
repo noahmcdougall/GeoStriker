@@ -670,13 +670,9 @@ section.indexpage .body {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-.page-wrap {
-  height: 450px;
-  margin-bottom: 3vw; }
-
-.page-wrap:after {
-  content: "";
-  display: block; }
+section.indexpage .wrapper {
+  min-height: 100%;
+  margin-bottom: -3vw; }
 
 section.indexpage .footer, .page-wrap:after {
   align-items: center;
