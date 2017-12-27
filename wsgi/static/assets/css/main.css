@@ -552,7 +552,8 @@ section.indexpage p {
   font-size: 35px; }
 
 section.indexpage .XYZImage {
-  height: 50vw;
+  height: 20vw;
+  background-repeat: no-repeat;
   background-image: url(/static/assets/img/xyzsdclogo.png);
   background-position: center;
   background-size: contain; }
