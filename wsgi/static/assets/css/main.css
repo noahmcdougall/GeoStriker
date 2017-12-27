@@ -603,8 +603,9 @@ section.indexpage .XYZImage {
   background-size: contain; }
 
 section.indexpage .col-1 {
-  height: 300px;
+  height: 500px;
   min-width: 320px;
+  margin-top: 30px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
