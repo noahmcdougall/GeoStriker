@@ -60,7 +60,7 @@ section {
 h1 {
   font-size: 2em;
   margin-top: 0px;
-  margin-bottom: 0.14em; }
+  margin-bottom: 0.24em; }
 
 /* Grouping content
    ========================================================================== */
@@ -550,7 +550,7 @@ section.indexpage .col-1 p {
 
 section.indexpage .header {
   align-items: center;
-  height: 30vw;
+  height: 20vw;
   width: 100%;
   background-repeat: no-repeat;
   background-image: url(/static/assets/img/background.jpg);
