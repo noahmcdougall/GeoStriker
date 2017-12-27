@@ -543,13 +543,20 @@ section.indexpage {
           justify-content: center;
 }
 
-section.indexpage h2 {
+section.indexpage .col-1 h2 {
   text-align: center
   font-size: 35px; }
 
-section.indexpage p {
+section.indexpage .col-1 p {
   text-align: center
   font-size: 35px; }
+
+section.indexpage .header {
+  height: 30vw;
+  background-repeat: no-repeat;
+  background-image: url(/static/assets/img/background.jpg);
+  background-position: center;
+  background-size: cover; }
 
 section.indexpage .XYZImage {
   height: 20vw;
