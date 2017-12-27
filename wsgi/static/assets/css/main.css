@@ -551,8 +551,9 @@ section.indexpage p {
   text-align: center
   font-size: 35px; }
 
-section.indexpage .XYZImage {
-  height: 40vw
+section.indexpage XYZImage {
+  height: 300px
+  background-color: black;
   background-image: url(/static/assets/img/xyzsdclogo.png);
   background-position: center;
   background-size: cover; }
