@@ -635,3 +635,22 @@ section.indexpage h2 {
   margin-top: 0;
   text-shadow: 2px 2px #3f3f42;
   height: 4vw; }
+
+section.indexpage .body {
+  align-items: center;
+  height: 50vw;
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: space-around;
+          justify-content: space-around; }
