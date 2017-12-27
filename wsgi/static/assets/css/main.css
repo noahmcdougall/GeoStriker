@@ -672,8 +672,11 @@ section.indexpage .body {
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: 3vw;
-}
+  margin-bottom: 3vw; }
+
+.page-wrap:after {
+  content: "";
+  display: block; }
 
 section.indexpage .footer, .page-wrap:after {
   align-items: center;
