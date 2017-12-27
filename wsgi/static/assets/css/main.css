@@ -544,10 +544,6 @@ section.indexpage {
           justify-content: center;
 }
 
-section.indexpage .col-1 h2 {
-  text-align: center
-  font-size: 35px; }
-
 section.indexpage .col-1 p {
   text-align: center
   font-size: 35px; }
@@ -582,3 +578,19 @@ section.indexpage .col-1 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+section.indexpage h1 {
+  font-size: 5vw;
+  color: #3f3f42;
+  weight: 400;
+  text-align: center;
+  margin-top: 0;
+  height: 4vw; }
+
+section.indexpage h2 {
+  font-size: 2.5vw;
+  color: #3f3f42;
+  weight: 400;
+  text-align: center;
+  margin-top: 0;
+  height: 4vw; }
