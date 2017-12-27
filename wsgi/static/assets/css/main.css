@@ -538,9 +538,9 @@ section.indexpage {
       -ms-flex-direction: rows;
           flex-direction: rows;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
+  -webkit-justify-content: center;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: center;
 }
 
 section.indexpage h2 {
@@ -550,7 +550,6 @@ section.indexpage h2 {
   font-size: 35px; }
 
 section.indexpage .col-1 {
-  height: 1000px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
