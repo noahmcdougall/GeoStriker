@@ -545,7 +545,7 @@ section.indexpage {
 }
 
 section.indexpage .col-1 p {
-  text-align: center
+  text-align: center;
   font-size: 35px; }
 
 section.indexpage .header {
@@ -603,7 +603,7 @@ section.indexpage .XYZImage {
   background-size: contain; }
 
 section.indexpage .col-1 {
-  height: 500px;
+  height: 450px;
   width: 40%;
   min-width: 320px;
   margin-top: 30px;
@@ -678,5 +678,8 @@ section.indexpage .footer {
           justify-content: space-around; }
 
 section.indexpage .footer a {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   font-size: 1.25vw;
   color: #ffffff; }
