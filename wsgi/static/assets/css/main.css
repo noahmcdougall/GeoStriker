@@ -584,18 +584,16 @@ section.indexpage .menu {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: space-around;
+          justify-content: space-around; }
 
-section.indexpage .menu p {
+section.indexpage .menu a {
   font-size: 1.5vw;
   color: #ffffff;
   weight: 400;
-  text-align: center;
-  margin-left: 1vw;
-  margin-right: 1vw; }
+  text-align: center; }
 
 section.indexpage .XYZImage {
   height: 20vw;
