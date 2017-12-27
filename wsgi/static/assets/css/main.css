@@ -545,12 +545,13 @@ section.indexpage {
 }
 
 section.indexpage hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0; }
-  
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;
+  background-color:#FFFF00;
+  height: 1px; }
+
 section.indexpage .col-1 p {
   text-align: center;
   font-size: 35px; }
