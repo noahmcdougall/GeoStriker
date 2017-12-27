@@ -660,7 +660,7 @@ section.indexpage .body {
 
 section.indexpage .footer {
   align-items: center;
-  height: 10vw;
+  height: 5vw;
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
@@ -678,5 +678,5 @@ section.indexpage .footer {
           justify-content: space-around; }
 
 section.indexpage .footer p {
-  font-size: 20vw;
+  font-size: 2.5vw;
   color: #ffffff; }
