@@ -693,6 +693,6 @@ section.indexpage .wrapper {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-section.indexpage .footer a {
+.footer a {
   font-size: 1.25vw;
   color: #ffffff; }
