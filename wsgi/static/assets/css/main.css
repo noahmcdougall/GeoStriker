@@ -675,7 +675,7 @@ section.indexpage .body {
   margin-bottom: 3vw;
 }
 
-section.indexpage .footer .page-wrap:after {
+section.indexpage .footer, .page-wrap:after {
   align-items: center;
   height: 3vw;
   width: 100%;
