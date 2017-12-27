@@ -659,6 +659,9 @@ section.indexpage .body {
           justify-content: space-around; }
 
 section.indexpage .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   align-items: center;
   height: 3vw;
   width: 100%;
@@ -678,8 +681,5 @@ section.indexpage .footer {
           justify-content: space-around; }
 
 section.indexpage .footer a {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   font-size: 1.25vw;
   color: #ffffff; }
