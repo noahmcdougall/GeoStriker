@@ -670,7 +670,12 @@ section.indexpage .body {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-section.indexpage .footer {
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: 3vw;
+}
+
+section.indexpage .footer .page-wrap:after {
   align-items: center;
   height: 3vw;
   width: 100%;
