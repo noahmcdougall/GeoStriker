@@ -695,3 +695,20 @@ section.indexpage .wrapper {
 .footer a {
   font-size: 1.25vw;
   color: #ffffff; }
+
+@media (max-width: 640px) {
+  section.indexpage .col-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: space-around;
+            justify-content: space-around; }
+}
