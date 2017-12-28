@@ -600,7 +600,7 @@ section.indexpage .menu {
           justify-content: space-around; }
 
 section.indexpage .menu a {
-  font-size: calc(15px + 0.25vw);
+  font-size: calc(12px + 0.25vw);
   color: #ffffff;
   weight: 400;
   text-align: center; }
