@@ -554,6 +554,7 @@ section.indexpage .header hr {
   margin-bottom: 1.25vw; }
 
 section.indexpage .col-1 p {
+  justify-content: center;
   text-align: center;
   font-size: 25px; }
 
@@ -565,9 +566,9 @@ section.indexpage .body hr {
   border: 0;
   clear:both;
   display:block;
-  width: 40%;
+  width: 75%;
   background-color:#3f3f42;
-  height: 0.25vw;
+  height: 0.15vw;
   margin-top: 0.25vw;
   margin-bottom: 1.25vw; }
 
