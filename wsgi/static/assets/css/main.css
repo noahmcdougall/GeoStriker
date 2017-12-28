@@ -736,9 +736,13 @@ section.indexpage .wrapper {
     width: 100%; }
 
   section.indexpage .col-1 p {
-    font-size: 15px }
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px; }
 
   section.indexpage .col-1 form {
-    font-size: 12px }
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px; }
 
 }
