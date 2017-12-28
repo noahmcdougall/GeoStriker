@@ -606,6 +606,7 @@ section.indexpage .menu a {
 
 section.indexpage .XYZImage {
   height: 20vw;
+  min-height: 150px;
   background-repeat: no-repeat;
   background-image: url(/static/assets/img/xyzsdclogo.png);
   background-position: center;
