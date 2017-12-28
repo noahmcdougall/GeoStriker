@@ -690,7 +690,7 @@ section.indexpage .wrapper {
   min-height: 100%;
   margin-bottom: -3vw; }
 
-.footer, .page-wrap:after {
+.footer {
   align-items: center;
   height: 3vw;
   min-height: calc(20px + 0.25vw);
@@ -714,7 +714,7 @@ section.indexpage .wrapper {
   font-size: calc(12px + 0.25vw);
   color: #ffffff; }
 
-@media (max-width: 640px) {
+@media (max-width: 650px) {
   section.indexpage .body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -734,5 +734,11 @@ section.indexpage .wrapper {
     margin-top: 10px;
     height: 200px;
     width: 100%; }
+
+  section.indexpage .col-1 p {
+    font-size: 15px }
+
+  section.indexpage .col-1 form {
+    font-size: 12px }
 
 }
