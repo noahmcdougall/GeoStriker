@@ -697,7 +697,7 @@ section.indexpage .wrapper {
   color: #ffffff; }
 
 @media (max-width: 640px) {
-  section.indexpage .col-1 {
+  section.indexpage .body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
