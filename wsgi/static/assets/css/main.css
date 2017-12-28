@@ -582,6 +582,7 @@ section.indexpage .header {
 section.indexpage .menu {
   align-items: center;
   height: 3vw;
+  min-height: calc(25px + 0.25vw);
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
@@ -599,7 +600,7 @@ section.indexpage .menu {
           justify-content: space-around; }
 
 section.indexpage .menu a {
-  font-size: 1.25vw;
+  font-size: calc(15px + 0.5vw);
   color: #ffffff;
   weight: 400;
   text-align: center; }
