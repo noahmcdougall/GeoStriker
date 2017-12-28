@@ -554,7 +554,6 @@ section.indexpage .header hr {
   margin-bottom: 1.25vw; }
 
 section.indexpage .col-1 p {
-  justify-content: center;
   text-align: center;
   font-size: 25px; }
 
@@ -565,9 +564,10 @@ section.indexpage .col-1 form {
 section.indexpage .body hr {
   border: 0;
   clear:both;
+  display:block;
   width: 75%;
   background-color:#3f3f42;
-  height: 0.15vw;
+  height: 0.1vw;
   margin-top: 0.25vw;
   margin-bottom: 1.25vw; }
 
@@ -628,6 +628,7 @@ section.indexpage .XYZImage {
   background-size: contain; }
 
 section.indexpage .col-1 {
+  justify-content: center;
   height: 325px;
   width: 40%;
   min-width: 320px;
