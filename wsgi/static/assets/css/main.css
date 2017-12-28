@@ -565,7 +565,6 @@ section.indexpage .col-1 form {
 section.indexpage .body hr {
   border: 0;
   clear:both;
-  display:block;
   width: 75%;
   background-color:#3f3f42;
   height: 0.15vw;
