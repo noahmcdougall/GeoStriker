@@ -562,6 +562,7 @@ section.indexpage .col-1 form {
   font-size: 15px; }
 
 section.indexpage .body hr {
+  align-self: center;
   border: 0;
   clear:both;
   display:block;
@@ -628,7 +629,6 @@ section.indexpage .XYZImage {
   background-size: contain; }
 
 section.indexpage .col-1 {
-  align-items: center;
   height: 325px;
   width: 40%;
   min-width: 320px;
