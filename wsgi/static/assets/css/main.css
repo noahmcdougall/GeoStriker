@@ -543,7 +543,7 @@ section.indexpage {
       -ms-flex-pack: end;
           justify-content: center; }
 
-section.indexpage hr {
+section.indexpage .header hr {
   border: 0;
   clear:both;
   display:block;
@@ -557,9 +557,19 @@ section.indexpage .col-1 p {
   text-align: center;
   font-size: 25px; }
 
-  section.indexpage .col-1 form {
-    text-align: center;
-    font-size: 15px; }
+section.indexpage .col-1 form {
+  text-align: center;
+  font-size: 15px; }
+
+section.indexpage .body hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 40%;
+  background-color:#3f3f42;
+  height: 0.25vw;
+  margin-top: 0.25vw;
+  margin-bottom: 1.25vw; }
 
 section.indexpage .header {
   align-items: center;
