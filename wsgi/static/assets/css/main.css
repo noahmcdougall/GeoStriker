@@ -676,6 +676,7 @@ section.indexpage .wrapper {
 .footer, .page-wrap:after {
   align-items: center;
   height: 3vw;
+  min-height: 15px;
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
@@ -693,7 +694,7 @@ section.indexpage .wrapper {
           justify-content: space-around; }
 
 .footer a {
-  font-size: 1.25vw;
+  font-size: calc(12px + 0.25vw);
   color: #ffffff; }
 
 @media (max-width: 640px) {
@@ -711,4 +712,10 @@ section.indexpage .wrapper {
     -webkit-justify-content: space-around;
         -ms-flex-pack: space-around;
             justify-content: space-around; }
+
+  section.indexpage .col-1 {
+    margin-top: 10px;
+    height: 200px;
+    width: 100%; }
+
 }
