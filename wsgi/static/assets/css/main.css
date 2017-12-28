@@ -557,6 +557,10 @@ section.indexpage .col-1 p {
   text-align: center;
   font-size: 35px; }
 
+  section.indexpage .col-1 form {
+    text-align: center;
+    font-size: 25px; }
+
 section.indexpage .header {
   align-items: center;
   height: 20vw;
