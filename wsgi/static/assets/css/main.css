@@ -669,7 +669,8 @@ h2 {
   height: 4vw; }
 
 .wrapper {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  min-height: 100%; }
 
 .body {
   align-items: center;
