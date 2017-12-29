@@ -668,9 +668,11 @@ h2 {
   text-shadow: 2px 2px #3f3f42;
   height: 4vw; }
 
+body {
+  margin-bottom: 25px; }
+
 .body {
   align-items: center;
-  margin-bottom: 25px;
   width: 100%;
   background-color: #ffffff;
   display: -webkit-box;
@@ -687,7 +689,7 @@ h2 {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-.footer {
+footer {
   align-items: center;
   height: 25px;
   width: 100%;
@@ -706,7 +708,7 @@ h2 {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-.footer a {
+footer a {
   font-size: calc(12px + 0.25vw);
   color: #ffffff; }
 
