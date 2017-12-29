@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>GeoStriker.com</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/static/assets/css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+<body>
+	<div class="wrapper">
+		<section class="indexpage">
+			<div class="header">
+				<h1>GeoStriker</h1>
+				<hr/>
+				<h2>Strike Dip Calculator from XYZ Points</h2>
+				</div>
+			<div class="menu">
+				<p></p>
+				<a href='/'>Home</a>
+				<a href='/static/assets/pdf/Guide.pdf'>Guide</a>
+				<a href='/about.html'>About</a>
+				<p></p>
+				</div>
+			<div class="body">
+				<div class="col-1">
+		      <p>Add a csv file to convert XYZ points to strike and dip by the best-fit plane method.  See guide for details.</p>
+					<hr />
+					<form action="processdata" method="post" enctype="multipart/form-data">
+		      	CSV File Name: <input type="file" name="myFile" /><br /><br />
+		      	<input type="submit" />
+		      </form>
+				</div>
+				<div class="col-1">
+					<div class="XYZImage"></div>
+				</div>
+			</div>
+		</section></div>
+	<div class="footer">
+		<a href="mailto:noah.mcdougall@gmail.com">noah.mcdougall@gmail.com</a>
+	</div>
+</body></html>

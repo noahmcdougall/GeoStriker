@@ -543,7 +543,7 @@ section.indexpage {
       -ms-flex-pack: end;
           justify-content: center; }
 
-section.indexpage .header hr {
+.header hr {
   border: 0;
   clear:both;
   display:block;
@@ -553,15 +553,15 @@ section.indexpage .header hr {
   margin-top: 0.25vw;
   margin-bottom: 1.25vw; }
 
-section.indexpage .col-1 p {
+.col-1 p {
   text-align: center;
   font-size: 25px; }
 
-section.indexpage .col-1 form {
+.col-1 form {
   text-align: center;
   font-size: 15px; }
 
-section.indexpage .body hr {
+.body hr {
   align-self: center;
   border: 0;
   clear:both;
@@ -572,7 +572,7 @@ section.indexpage .body hr {
   min-height: 1px;
   margin-top: 0.25vw; }
 
-section.indexpage .header {
+.header {
   align-items: center;
   height: 20vw;
   width: 100%;
@@ -594,7 +594,7 @@ section.indexpage .header {
       -ms-flex-pack: center;
           justify-content: center; }
 
-section.indexpage .menu {
+.menu {
   align-items: center;
   height: 3vw;
   min-height: calc(25px + 0.25vw);
@@ -614,13 +614,13 @@ section.indexpage .menu {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-section.indexpage .menu a {
+.menu a {
   font-size: calc(12px + 0.25vw);
   color: #ffffff;
   weight: 400;
   text-align: center; }
 
-section.indexpage .XYZImage {
+.XYZImage {
   height: 20vw;
   min-height: 150px;
   background-repeat: no-repeat;
@@ -628,7 +628,7 @@ section.indexpage .XYZImage {
   background-position: center;
   background-size: contain; }
 
-section.indexpage .col-1 {
+.col-1 {
   height: 325px;
   width: 40%;
   min-width: 320px;
@@ -648,7 +648,7 @@ section.indexpage .col-1 {
       -ms-flex-pack: center;
           justify-content: center; }
 
-section.indexpage h1 {
+h1 {
   font-size: 5vw;
   color: #ffffff;
   weight: 400;
@@ -658,7 +658,7 @@ section.indexpage h1 {
   text-shadow: 2px 2px #3f3f42;
   height: 6vw; }
 
-section.indexpage h2 {
+h2 {
   font-size: 2.5vw;
   color: #ffffff;
   weight: 400;
@@ -668,7 +668,7 @@ section.indexpage h2 {
   text-shadow: 2px 2px #3f3f42;
   height: 4vw; }
 
-section.indexpage .body {
+.body {
   align-items: center;
   width: 100%;
   background-color: #ffffff;
@@ -686,7 +686,7 @@ section.indexpage .body {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-section.indexpage .wrapper {
+.wrapper {
   min-height: 100%;
   margin-bottom: -3vw; }
 
@@ -715,7 +715,7 @@ section.indexpage .wrapper {
   color: #ffffff; }
 
 @media (max-width: 650px) {
-  section.indexpage .body {
+  .body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -730,17 +730,17 @@ section.indexpage .wrapper {
         -ms-flex-pack: space-around;
             justify-content: space-around; }
 
-  section.indexpage .col-1 {
+  .col-1 {
     margin-top: 10px;
     height: 200px;
     width: 100%; }
 
-  section.indexpage .col-1 p {
+  .col-1 p {
     font-size: 15px;
     padding-left: 10px;
     padding-right: 10px; }
 
-  section.indexpage .col-1 form {
+  .col-1 form {
     font-size: 12px;
     padding-left: 10px;
     padding-right: 10px; }
