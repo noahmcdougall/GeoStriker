@@ -669,7 +669,7 @@ h2 {
   height: 4vw; }
 
 .wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 3vw;
   min-height: 100%; }
 
 .body {
@@ -692,7 +692,7 @@ h2 {
 
 .footer {
   align-items: center;
-  height: 25px;
+  height: 3vw;
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
