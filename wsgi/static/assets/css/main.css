@@ -687,12 +687,11 @@ h2 {
           justify-content: space-around; }
 
 .wrapper {
-  height: calc(100% - 3vw); }
+  height: calc(100% - 20px); }
 
 .footer {
   align-items: center;
-  height: 3vw;
-  min-height: calc(20px + 0.25vw);
+  height: 20px;
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
