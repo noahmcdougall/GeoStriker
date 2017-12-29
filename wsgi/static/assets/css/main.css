@@ -686,7 +686,7 @@ h2 {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-.wrapper {
+section.indexpage .wrapper {
   min-height: 100%;
   margin-bottom: -3vw; }
 
