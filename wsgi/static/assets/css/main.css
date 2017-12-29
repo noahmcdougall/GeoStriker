@@ -686,9 +686,8 @@ h2 {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-section.indexpage .wrapper {
-  min-height: 100%;
-  margin-bottom: -3vw; }
+.wrapper {
+  height: calc(100% - 3vw); }
 
 .footer {
   align-items: center;
