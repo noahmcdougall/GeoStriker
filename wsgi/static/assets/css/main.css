@@ -668,8 +668,10 @@ h2 {
   text-shadow: 2px 2px #3f3f42;
   height: 4vw; }
 
+<!--
 .wrapper {
   height: calc(100% - (25px + 0.25vw)); }
+-->
 
 .body {
   align-items: center;
