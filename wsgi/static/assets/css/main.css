@@ -670,7 +670,7 @@ h2 {
 
 .body {
   align-items: center;
-  height: 100%;
+  height: calc(100% - 25px);
   width: 100%;
   background-color: #ffffff;
   display: -webkit-box;
@@ -686,9 +686,6 @@ h2 {
   -webkit-justify-content: space-around;
       -ms-flex-pack: space-around;
           justify-content: space-around; }
-
-.wrapper {
-  height: calc(100% - 25px); }
 
 .footer {
   align-items: center;
