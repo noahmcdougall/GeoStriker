@@ -670,6 +670,7 @@ h2 {
 
 .body {
   align-items: center;
+  height: 100%;
   width: 100%;
   background-color: #ffffff;
   display: -webkit-box;
@@ -687,11 +688,11 @@ h2 {
           justify-content: space-around; }
 
 .wrapper {
-  height: calc(100% - 20px); }
+  height: calc(100% - 25px); }
 
 .footer {
   align-items: center;
-  height: 20px;
+  height: 25px;
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
