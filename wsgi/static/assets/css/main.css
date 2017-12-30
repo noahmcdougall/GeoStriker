@@ -577,7 +577,8 @@ section.about {
   font-size: 15px; }
 
 .col-1 a {
-  color: #0645AD; }
+  color: #0645AD;
+  text-decoration: underline; }
 
 .body hr {
   align-self: center;
