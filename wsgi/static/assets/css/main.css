@@ -754,6 +754,9 @@ section.about .col-1 h3 {
       -ms-flex-pack: center;
           justify-content: center; }
 
+section.about hr {
+  margin-bottom: 10px; }
+  
 @media (max-width: 1030px) {
   section.about .body {
     display: -webkit-box;
