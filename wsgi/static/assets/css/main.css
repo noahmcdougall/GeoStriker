@@ -762,7 +762,11 @@ section.about .col-1 h3 {
     -webkit-justify-content: space-around;
         -ms-flex-pack: space-around;
             justify-content: space-around; }
-  }
+
+  section.about .col-1 {
+    width: 80%;
+    max-width: auto; }
+}
 
 
 @media (max-width: 650px) {
