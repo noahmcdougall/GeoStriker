@@ -583,7 +583,8 @@ section.about {
   display:block;
   width: 75%;
   background-color:#3f3f42;
-  height: 1px;
+  height: 0.1vw;
+  min-height: 1px;
   margin-top: 0.25vw; }
 
 .header {
