@@ -769,7 +769,8 @@ section.about .col-1 h3 {
 
   section.about .col-1 {
     width: 80%;
-    max-width: auto; }
+    max-width: auto;
+    height: auto; }
 }
 
 
