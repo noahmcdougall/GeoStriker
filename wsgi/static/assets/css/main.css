@@ -727,7 +727,8 @@ h2 {
   color: #ffffff; }
 
 section.about .col-1 p {
-  font-size: 12px }
+  font-size: 12px;
+  margin-bottom: 0px; }
 
 section.about .col-1 h3 {
   justify-content: center;
