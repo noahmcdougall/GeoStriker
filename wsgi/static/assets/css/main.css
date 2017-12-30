@@ -576,6 +576,9 @@ section.about {
   text-align: center;
   font-size: 15px; }
 
+.col-1 a {
+  color: #0645AD; }
+
 .body hr {
   align-self: center;
   border: 0;
