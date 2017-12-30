@@ -765,6 +765,10 @@ section.exportdata .col-1 {
   width: 80%;
   max-width: auto; }
 
+section.exportdata table {
+  border-collapse: collapse;
+  width: 100%; }
+
 @media (max-width: 1030px) {
   section.about .body {
     display: -webkit-box;
