@@ -1,10 +1,46 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>GeoStriker.com</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/static/assets/css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
 <body>
-<table border=1>
-<tr><th>Name</th><th>Strike</th><th>Dip</th><th>Direction</th><th>a</th><th>b</th><th>c</th><th>Action</th></tr>
-{% for item in answers %}
-<tr><td>{{ item.name }}</td><td>{{ item.strike }}</td><td>{{ item.dip }}</td><td>{{ item.direction }}</td><td>{{ item.a }}</td><td>{{ item.b }}</td><td>{{ item.c }}</td><td><input type="button"></td></tr>
-{% endfor %}
-</table>
+	<div class="wrapper">
+		<section class="about">
+			<div class="header">
+				<h1>GeoStriker</h1>
+				<hr/>
+				<h2>Strike Dip Calculator from XYZ Points</h2>
+				</div>
+			<div class="menu">
+				<p></p>
+				<a href='/'>Home</a>
+				<a href='/static/assets/pdf/Guide.pdf'>Guide</a>
+				<a href='/static/about.html'>About</a>
+				<p></p>
+				</div>
+			<div class="body">
+				<div class="col-1">
+          <table border=1>
+          <tr><th>Name</th><th>Strike</th><th>Dip</th><th>Direction</th><th>a</th><th>b</th><th>c</th><th>Action</th></tr>
+          {% for item in answers %}
+          <tr><td>{{ item.name }}</td><td>{{ item.strike }}</td><td>{{ item.dip }}</td><td>{{ item.direction }}</td><td>{{ item.a }}</td><td>{{ item.b }}</td><td>{{ item.c }}</td><td><input type="button"></td></tr>
+          {% endfor %}
+          </table>
+        </div>
+		</section></div>
+	<div class="footer">
+		<a href="mailto:noah.mcdougall@gmail.com">noah.mcdougall@gmail.com</a>
+	</div>
+</body>
+
+
+
+<body>
+
 <br />
 </body>
 </html>
