@@ -761,6 +761,10 @@ section.about .col-1 h3 {
 section.about .col-1 hr {
   margin-bottom: 10px; }
 
+section.exportdata .col-1 {
+  width: 80%;
+  max-width: auto; }
+
 @media (max-width: 1030px) {
   section.about .body {
     display: -webkit-box;
