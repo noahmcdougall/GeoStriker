@@ -747,6 +747,23 @@ section.about .col-1 h3 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+@media (max-width: 970px) {
+  section.about .body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: space-around;
+            justify-content: space-around; }
+  }
+
 
 @media (max-width: 650px) {
   .body {
