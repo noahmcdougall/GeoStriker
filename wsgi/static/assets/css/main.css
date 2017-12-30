@@ -731,6 +731,7 @@ section.about .col-1 p {
   margin-bottom: 0px; }
 
 section.about .col-1 h3 {
+  max-width: 320px;
   justify-content: center;
   align-items: center;
   font-size: 16px;
@@ -751,7 +752,7 @@ section.about .col-1 h3 {
       -ms-flex-pack: center;
           justify-content: center; }
 
-@media (max-width: 970px) {
+@media (max-width: 1030px) {
   section.about .body {
     display: -webkit-box;
     display: -webkit-flex;
