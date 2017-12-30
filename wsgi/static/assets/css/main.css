@@ -754,7 +754,7 @@ section.about .col-1 h3 {
       -ms-flex-pack: center;
           justify-content: center; }
 
-section.about .col-1 hr {
+section.about .body .col-1 hr {
   margin-bottom: 10px; }
 
 @media (max-width: 1030px) {
