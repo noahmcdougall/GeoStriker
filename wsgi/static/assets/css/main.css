@@ -734,13 +734,13 @@ section.about .col-1 {
   max-width: 320px; }
 
 section.about .col-1 p {
-  font-size: 0.8vw;
+  font-size: Calc(12px + 0.3vw);
   margin-bottom: 0px; }
 
 section.about .col-1 h3 {
   justify-content: center;
   align-items: center;
-  font-size: 1.2vw;
+  font-size: Calc(14px + 0.5vw);
   margin-top: 5px;
   margin-bottom: 5px;
   position: relative;
