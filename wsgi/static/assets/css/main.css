@@ -570,7 +570,7 @@ section.about {
 
 .col-1 p {
   text-align: center;
-  font-size: 20vw; }
+  font-size: 1vw; }
 
 .col-1 form {
   text-align: center;
@@ -734,7 +734,7 @@ section.about .col-1 {
   max-width: 320px; }
 
 section.about .col-1 p {
-  font-size: 20vw;
+  font-size: 1vw;
   margin-bottom: 0px; }
 
 section.about .col-1 h3 {
