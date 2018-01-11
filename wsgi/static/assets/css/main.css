@@ -690,7 +690,7 @@ h2 {
   margin-bottom: 25px; }
 
 .body {
-  height: 30vw;
+  height: 25vw;
   align-items: center;
   width: 100%;
   background-color: #ffffff;
@@ -772,6 +772,7 @@ section.exportdata table {
 
 @media (max-width: 1030px) {
   section.about .body {
+    height: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -798,6 +799,7 @@ section.exportdata table {
 
 @media (max-width: 650px) {
   .body {
+    height: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
