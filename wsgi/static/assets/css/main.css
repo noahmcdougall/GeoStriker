@@ -671,7 +671,6 @@ section.about {
   height: auto;
   width: 100%;
   min-width: 320px;
-  margin-top: 30px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -688,7 +687,8 @@ section.about {
           justify-content: space-around; }
 
 .col-full .col-1 {
-  margin: 0px; }
+  margin: 0px;
+  height: auto;}
 
 .col-head {
   align-items: center;
@@ -713,7 +713,7 @@ section.about {
 
 .col-head .col-1 {
   margin: 0px;}
-  
+
 .col-head hr {
   align-self: center;
   border: 0;
