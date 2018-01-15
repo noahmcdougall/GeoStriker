@@ -687,6 +687,9 @@ section.about {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
+.col-full .col-1 {
+  margin: 0px; }
+
 .col-head {
   align-items: center;
   height: auto;
@@ -708,6 +711,9 @@ section.about {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
+.col-head .col-1 {
+  margin: 0px;}
+  
 .col-head hr {
   align-self: center;
   border: 0;
