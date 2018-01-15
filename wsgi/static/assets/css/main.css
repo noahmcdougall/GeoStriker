@@ -668,7 +668,6 @@ section.about {
 
   .col-full {
     align-items: center;
-    justify-content: center;
     height: 325px;
     width: 100%;
     min-width: 320px;
@@ -683,9 +682,9 @@ section.about {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: space-around;
             justify-content: center; }
 
 h1 {
