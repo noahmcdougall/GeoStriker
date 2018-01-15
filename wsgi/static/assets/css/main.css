@@ -832,6 +832,8 @@ section.exportdata table {
 .pythonpro {
   height: 20vw;
   min-height: 150px;
+  width: 40%;
+  min-width: 320px;
   background-repeat: no-repeat;
   background-image: url(/static/assets/img/pythonpro.jpg);
   background-position: center;
@@ -840,6 +842,7 @@ section.exportdata table {
 .mcdougavational {
   height: 20vw;
   min-height: 150px;
+  width: 40%;
   min-width: 320px;
   background-repeat: no-repeat;
   background-image: url(/static/assets/img/mcdougavational.jpg);
