@@ -691,7 +691,7 @@ section.about {
   margin: 0px;
   height: auto;
   width: 40%;
-  max-width: inherit; }
+  max-width: none; }
 
 .col-head {
   align-items: center;
