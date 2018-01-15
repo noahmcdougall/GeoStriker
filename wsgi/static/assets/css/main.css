@@ -667,6 +667,8 @@ section.about {
           justify-content: center; }
 
   .col-full {
+    align-items: center;
+    justify-content: center;
     height: 325px;
     width: 80%;
     min-width: 320px;
