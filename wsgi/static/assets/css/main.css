@@ -830,6 +830,7 @@ section.exportdata table {
   width: 100%; }
 
 .pythonpro {
+  margin-top: 30px
   height: 20vw;
   min-height: 150px;
   width: 40%;
@@ -840,6 +841,7 @@ section.exportdata table {
   background-size: contain; }
 
 .mcdougavational {
+  margin-top: 30px
   height: 20vw;
   min-height: 150px;
   width: 40%;
