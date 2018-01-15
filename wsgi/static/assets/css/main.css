@@ -690,7 +690,8 @@ section.about {
 .col-full .col-1 {
   margin: 0px;
   height: auto;
-  width: 40%; }
+  width: 40%;
+  max-width: inherit; }
 
 .col-head {
   align-items: center;
