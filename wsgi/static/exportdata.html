@@ -24,8 +24,12 @@
 				</div>
 			<div class="body">
 				<div class="col-1">
+					<p>Variables A B and C provide the equation of the best-fit plane.</p>
+					<h2>a*X + b*Y + c = Z</h2>
+				</div>
+				<div class="col-1">
           <table border=1>
-          <tr><th>Name</th><th>Strike</th><th>Dip</th><th>Direction</th><th>a</th><th>b</th><th>c</th></tr>
+          <tr><th>Name</th><th>Strike</th><th>Dip</th><th>Dip Direction</th><th>a</th><th>b</th><th>c</th></tr>
           {% for item in answers %}
           <tr><td>{{ item.name }}</td><td>{{ item.strike }}</td><td>{{ item.dip }}</td><td>{{ item.direction }}</td><td>{{ item.a }}</td><td>{{ item.b }}</td><td>{{ item.c }}</td></tr>
           {% endfor %}
