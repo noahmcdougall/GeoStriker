@@ -853,7 +853,7 @@ section.exportdata table {
   background-size: contain; }
 
 @media (max-width: 1030px) {
-  section.about .body {
+  section.about .body, .col-full {
     height: auto;
     display: -webkit-box;
     display: -webkit-flex;
