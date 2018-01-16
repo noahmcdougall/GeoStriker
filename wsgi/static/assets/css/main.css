@@ -853,7 +853,7 @@ section.exportdata table {
   background-size: contain; }
 
 @media (max-width: 1030px) {
-  section.about .body, .col-full {
+  section.about .body {
     height: auto;
     display: -webkit-box;
     display: -webkit-flex;
@@ -868,6 +868,22 @@ section.exportdata table {
     -webkit-justify-content: space-around;
         -ms-flex-pack: space-around;
             justify-content: space-around; }
+
+    section.about .col-full {
+      height: auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: space-around;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: space-around;
+              justify-content: space-around; }
 
   section.about .col-1 {
     width: 80%;
