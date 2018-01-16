@@ -772,7 +772,7 @@ h2 {
 
 .footer {
   align-items: center;
-  height: 25px;
+  height: 35px;
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
@@ -790,7 +790,7 @@ h2 {
           justify-content: space-around; }
 
 .footer a {
-  font-size: 12px;
+  font-size: Calc(12px + 0.3vw);
   color: #ffffff; }
 
 section.about .col-1 {
