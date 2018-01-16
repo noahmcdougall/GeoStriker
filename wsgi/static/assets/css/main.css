@@ -633,7 +633,7 @@ section.about {
           justify-content: space-around; }
 
 .menu a {
-  font-size: 24px;
+  font-size: Calc(12px + 0.3vw);
   color: #ffffff;
   weight: 400;
   text-align: center; }
