@@ -868,9 +868,12 @@ section.exportdata .body {
       -ms-flex-pack: space-around;
           justify-content: space-around; }
 
-section.exportdata h2 {
-  color: #3f3f42; }
-  
+section.exportdata .body h2 {
+  color: #000000; }
+
+section.exportdata .col-1 {
+  height: auto; }
+
 @media (max-width: 1030px) {
   section.about .body, .col-full {
     height: auto;
