@@ -615,7 +615,7 @@ section.about {
 
 .menu {
   align-items: center;
-  height: 25px;
+  height: 35px;
   width: 100%;
   background-color: #3f3f42;
   display: -webkit-box;
@@ -633,7 +633,7 @@ section.about {
           justify-content: space-around; }
 
 .menu a {
-  font-size: 12px;
+  font-size: 24px;
   color: #ffffff;
   weight: 400;
   text-align: center; }
@@ -870,8 +870,8 @@ section.exportdata table {
             justify-content: space-around; }
 
   .mcdougavational {
-    display: none }
-    
+    display: none; }
+
   section.about .col-1 {
     width: 80%;
     max-width: 100%;
