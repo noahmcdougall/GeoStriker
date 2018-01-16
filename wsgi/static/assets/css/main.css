@@ -869,7 +869,8 @@ section.exportdata .body {
           justify-content: space-around; }
 
 section.exportdata .body h2 {
-  color: #000000; }
+  color: #3f3f42;
+  text-shadow: none; }
 
 section.exportdata .col-1 {
   height: auto; }
