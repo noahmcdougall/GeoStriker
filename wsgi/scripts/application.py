@@ -154,7 +154,6 @@ class calculate:
         for i in range(0, len(xyone)):
             planez.append((np.matrix(xyone[i])*np.matrix(plane[i])))
 
-        z = sum(z,[])
         zfloat = []
         for i in range(0, len(z)):
             zfloattemp = []
