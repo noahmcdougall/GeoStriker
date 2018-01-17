@@ -31,7 +31,7 @@
           <table border=1>
           <tr><th>Name</th><th>Strike</th><th>Dip</th><th>Dip Direction</th><th>a</th><th>b</th><th>c</th></tr>
           {% for item in answers %}
-          <tr><td>{{ item.name }}</td><td>{{ item.strike }}</td><td>{{ item.dip }}</td><td>{{ item.direction }}</td><td>{{ item.a }}</td><td>{{ item.b }}</td><td>{{ item.c }}</td></tr>
+          <tr><td>{{ item.name }}</td><td>{{ item.strike }}</td><td>{{ item.dip }}</td><td>{{ item.direction }}</td><td>{{ item.a }}</td><td>{{ item.b }}</td><td>{{ item.c }}</td><td>{{ item.error }}</td></tr>
           {% endfor %}
           </table>
         </div>

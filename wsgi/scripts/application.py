@@ -148,12 +148,28 @@ class calculate:
         for i in range(0, len(plane)):
             dipangle.append(np.degrees(math.acos((u[i][0] * v[i][0] + u[i][1] * v[i][1] + u[i][2] * v[i][2])/(Us[i] * Vs[i]))))
 
+
+        ## Calculating error ##
+        planez = []
+        for i in range(0, len(xyone)):
+            planez.append((np.matrix(xyone[i])*np.matrix(plane[i])).tolist())
+        planez = sum(planez, [])
+        planez = sum(planez, [])
+
+        error = []
+        avgerror = []
+        for i in range(0, len(planez)):
+            error.append(abs((planez[i]-z[i])/planez[i]*100))
+
+        for i in range(0, len(error)):
+            avgerror.append(np.mean(error[i]))
+
         ## Returns fault name, rounded strike, rounded dip angle, and dip direction ##
         faultskeys = list(faults.keys())
         answers = []
         for i in range(0, len(plane)):
             answers.append({'name' : faultskeys[i], 'strike' : str(round(faultstrike[i],1)), 'dip' : str(round(dipangle[i],1)), 'direction' : str(dipdirection[i]), 'a' : float(plane[i][0]), 'b' : float(plane[i][1]),
-            'c' : float(plane[i][2])})
+            'c' : float(plane[i][2]), 'error' : avgerror[i]})
         cherrypy.session['processeddata'] = answers
 
         raise cherrypy.HTTPRedirect("/displayprocesseddata")
