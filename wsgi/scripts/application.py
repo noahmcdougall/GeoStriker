@@ -174,7 +174,7 @@ class calculate:
         answers = []
         for i in range(0, len(plane)):
             answers.append({'name' : faultskeys[i], 'strike' : str(round(faultstrike[i],1)), 'dip' : str(round(dipangle[i],1)), 'direction' : str(dipdirection[i]), 'a' : float(plane[i][0]), 'b' : float(plane[i][1]),
-            'c' : float(plane[i][2]), 'error' : avgerror[i]})
+            'c' : float(plane[i][2]), 'error' : round(avgerror[i],1)})
         cherrypy.session['processeddata'] = answers
 
         raise cherrypy.HTTPRedirect("/displayprocesseddata")
