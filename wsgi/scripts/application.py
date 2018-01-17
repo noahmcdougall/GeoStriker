@@ -156,10 +156,15 @@ class calculate:
         planez = sum(planez, [])
         planez = sum(planez, [])
 
+        z = sum(z,[])
+        zfloat = []
+        for i in range(0, len(z)):
+            zfloat.append(float(z[i]))
+
         error = []
         avgerror = []
         for i in range(0, len(planez)):
-            error.append(abs((planez[i]-z[i])/planez[i]*100))
+            error.append(abs((planez[i]-zfloat[i])/planez[i]*100))
 
         for i in range(0, len(error)):
             avgerror.append(np.mean(error[i]))
