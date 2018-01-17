@@ -152,22 +152,26 @@ class calculate:
         ## Calculating error ##
         planez = []
         for i in range(0, len(xyone)):
-            planez.append((np.matrix(xyone[i])*np.matrix(plane[i])).tolist())
-        planez = sum(planez, [])
-        planez = sum(planez, [])
+            planez.append((np.matrix(xyone[i])*np.matrix(plane[i])))
 
         z = sum(z,[])
         zfloat = []
         for i in range(0, len(z)):
-            zfloat.append(float(z[i]))
+            zfloattemp = []
+            for j in range(0, len(z[i])):
+                zfloattemp.append(float(z[i][j]))
+            zfloat.append(zfloattemp)
 
         error = []
         avgerror = []
-        for i in range(0, len(planez)):
-            error.append(abs((planez[i]-zfloat[i])/planez[i]*100))
+        for i in range (0, len(planez)):
+            errortemp = []
+            for j in range(0, len(planez[i])):
+                errortemp.append(abs(planez[i][j]-zfloat[i][j]))
+            error.append(errortemp)
 
         for i in range(0, len(error)):
-            avgerror.append(np.mean(error[i]))
+            avgerror.append(np.mean(error[i])/np.mean(zfloat[i])*100)
 
         ## Returns fault name, rounded strike, rounded dip angle, and dip direction ##
         faultskeys = list(faults.keys())
