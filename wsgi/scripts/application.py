@@ -161,23 +161,35 @@ class calculate:
                 zfloattemp.append(float(z[i][j]))
             zfloat.append(zfloattemp)
 
-        error = []
-        avgerror = []
-        for i in range (0, len(planez)):
-            errortemp = []
-            for j in range(0, len(planez[i])):
-                errortemp.append(abs(planez[i][j]-zfloat[i][j]))
-            error.append(errortemp)
+        actminpred = []
+        for i in range (0, len(zfloat)):
+            actminpredtemp = []
+            for j in range(0, len(zfloat[i])):
+                actminpredtemp.append((zfloat[i][j]-planez[i][j])**2)
+            actminpred.append(actminpredtemp)
 
-        for i in range(0, len(error)):
-            avgerror.append(np.mean(error[i])/np.mean(zfloat[i])*100)
+        sumofactminpred = []
+        for i in range(0, len(actminpred)):
+            sumofactminpred.append(np.sum(actminpred[i]))
+
+        actminmean = []
+        for i in range(0, len(zfloat)):
+            actminmean.append((zfloat[i]-np.mean(zfloat[i]))**2)
+
+        sumofactminmean = []
+        for i in range(0, len(actminmean)):
+            sumofactminmean.append(np.sum(actminmean[i]))
+
+        rsquared = []
+        for i in range(0, len(actminmean)):
+            rsquared.append(1-(sumofactminpred[i]/sumofactminmean[i]))
 
         ## Returns fault name, rounded strike, rounded dip angle, and dip direction ##
         faultskeys = list(faults.keys())
         answers = []
         for i in range(0, len(plane)):
             answers.append({'name' : faultskeys[i], 'strike' : str(round(faultstrike[i],1)), 'dip' : str(round(dipangle[i],1)), 'direction' : str(dipdirection[i]), 'a' : float(plane[i][0]), 'b' : float(plane[i][1]),
-            'c' : float(plane[i][2]), 'error' : round(avgerror[i],2)})
+            'c' : float(plane[i][2]), 'r^2' : round(rsquared[i],2)})
         cherrypy.session['processeddata'] = answers
 
         raise cherrypy.HTTPRedirect("/displayprocesseddata")
